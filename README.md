@@ -1,1 +1,1 @@
-# hotel
+https://lucianofs.github.io/hotel/
