@@ -1,1 +1,1 @@
-https://lucianofs.github.io/hotel/
+https://lucianofs.github.io/hotel/index.html
