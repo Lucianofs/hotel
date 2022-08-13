@@ -1,197 +1,1118 @@
-*{
-  padding: 0;
+*{  
+  list-style:none;  
+  text-decoration: none;
+}
+
+body{
+  box-sizing: border-box;
   margin: 0;
-  list-style:none;
+  padding: 0;
+  width: 100%;
+  height: 100%;  
 }
 
-html, body{
-  height: 100%;
-  font-family: 'Courier New', Courier, monospace;
-  color: #000;  
-}
 
-/*Configurações css definição do layout*/
-.pagina{
+/**********CONFIGURAÇÃO CSS DOS ELEMENTOS DAS ÁREAS**********/
+/*Definição css da disposição das áreas, layout geral da pagina*/
+.layout-principal {
   display: grid;
-  grid-template-columns: auto auto auto auto;
-  grid-gap:0px; 
-  grid-template-rows: auto;     
   grid-template-areas:
-  "atopo amenu amenu amenu"
-  "amain amain amain amain"
-  "afooter afooter afooter afooter" 
-  ;                 
+  'alogo amenu amenu amenu amenu amenu'
+  'areserva areserva areserva areserva areserva areserva'
+  'aslider aslider aslider aslider aslider aslider'
+  'afooter afooter afooter afooter afooter afooter';
+ /* grid-gap: 10px; */
+ /* background-color: #2196F3;*/
+  /*padding: 10px;   */
+}
+.layout-principal > div {
+ /* color: rgba(255, 255, 255, 0.8);*/
+  text-align: center;
+ /* padding: 5px 0;*/
+  font-size: 15px;
 }
 
 
-/*configurações css dos elementos que estão no topo*/
-.topo{
-  grid-area: atopo;
+
+
+/**********CONFIGURAÇÃO CSS DOS ELEMENTOS DA LOGOMARCA NO TOPO**********/
+/* Área Grid da logomarca*/
+.logo-area { 
+  grid-area: alogo;
+  display:flex;
+  position:fixed;
+  top: 5px;   
+  width: 100%;
+  height: 65px;
+  z-index: 1;
+  }
+/*Css de configuração da imagem*/
+.logo-img { 
+filter: drop-shadow(0px 10px 15px rgba(245, 5, 5, 0.904));  
+width: 230px;
+height: 65px;
+margin-top:-5px;
+}
+
+
+
+
+/*************CONFIGURAÇÃO CSS DOS ELEMENTOS DO MENU*************/
+/*Área geral grid área do menu*/
+.menu-area-geral { 
+  grid-area: amenu;
+  position:fixed;
+ /* margin-top: 6px;*/
   display: flex;
-  margin-top: 40px;
-  margin-left: 35px;  
+  margin-left: -20px; 
+  justify-content: flex-end;
+  z-index: 1;
+  width: 100%;
+} 
+.itens-menu-area{
+ display: flex;
+ align-items: center; 
+}
+/*Área onde fica todos os links*/
+.menu-area-links{
+ display:flex;
+ flex-wrap: wrap;
+ gap: 10px;
+ font-size: 13px;
+ font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ text-transform: uppercase;  
+}
+.menu-link-individual{
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #fe0000;
+  padding: 15px 10px;
+  border-radius: 3px;
+  text-decoration: none;
+}
+.menu-url:hover{
+  background-color: black ;
+  color: #ffffff;
+  transition: .5s; 
+  text-decoration: none;  
+  padding: 15px 10px;
+  border-radius: 3px;  
 }
 
 
-/* Configuração da logomarca*/
-.logo img{
-  position: fixed;
-  height: 70px;
-  top: 5px;
-  z-index: 1;  
+
+
+
+
+/****CSS FORM PRÉ RESERVA DA PAGINA INDEX ****/
+/*Área geral espaço onde fica a reserva*/
+.barra-reserva-area-index { 
+  background-color: #fe0000;
+  grid-area: areserva;
+  display:flex;
+  justify-content: space-around;
+  position:fixed;
+  margin-top: 70px;
+  width:100%;
+  z-index: 1;
+ /* width: 1330px; */
+  }
+.barra-reserva-area-itens-index {
+  display: flex;
+  color: #ffffff;  
+}
+.barra-reserva-spam-index {
+  color: black;  
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-right: 20px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.barra-reserva-form-index {
+  background-color:#fe0000;
+  color: black;
+  display: flex;  
+  flex-wrap: wrap;
+}
+.barra-reserva-form-chegada-index {
+  /*background: violet;*/
+  display: inline-block;  
+}
+.barra-reserva-form-chegada-label-index {
+  /* background: violet;*/
+  display: inline-block;
+}
+.barra-reserva-form-saida-index {
+  /*background: #f36621;*/
+  display: inline-block;  
+}
+.barra-reserva-form-saida-label-index {
+  /*background: #f36621;*/
+  display: inline-block;
+}
+.barra-reserva-form-fone-index{
+  display: inline-block;
+}
+.barra-reserva-form-fone-label-index{
+  display: inline-block;
+}
+.barra-reserva-form-adulto-index {
+  display: inline-block;
+}
+.barra-reserva-form-crianca-index {
+  display: inline-block;
+}
+.barra-reserva-form-pesquisar-index {
+  display: inline-block;
+  margin-left: 10px;
+  background: #f36621;
+  color: #fff;
+  padding: 4px 6px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.botao-pesquisar{
+
+}
+.barra-reserva-form-check-in-index {
+  display: inline;
+  list-style: none;
+  padding: 4px 6px;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background: transparent;
+  font-weight: 600;
+  color: #fff !important;
+  display: inline-block;
+  background-color: #f3a117;
+  /*transition: 400ms ease-in-out;*/
+}
+.botao-checkin{
+
 }
 
 
-  /*Configurações css do menu começa aqui*/
-  .menu{
-    Position: fixed;
-    display: flex;
-    justify-content: right;
-    align-items: center;
-    grid-area: amenu;
-    width: 100%;
-    top: 0px;
-    background-color: #fff;
-    
-  }
-  
-  .menu li a{
-    color: black;
-    background-color:#fe0000;
-    padding: 15px;
-  }
-
-  .menu li a:hover{
-    background-color:black;
-    color: white;
-    transition: .5s;
-  }
-
-  nav ul li {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-    
-  }
-  nav ul li a {
-    color: white;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-    text-transform: uppercase;
-  }
 
 
-/*Aqui começa as configurações css da parte principal/main o meio do site*/
-.principal{
-  grid-area: amain;
-  animation-name: principal;
+
+/*************CONFIGURAÇÃO CSS SLIDER*************/
+/*Área geral espaço onde fica a reserva*/
+.slider-area {
+  grid-area: aslider;
+  display: flex;
+  width: 100%;
+ }
+.slide-area-conteudo{
+  width: 100%;
   height: 740px;
-  margin: auto;
-  max-width: 100%;
+ margin-top:142px;
+  background-size: cover;
+  animation-name: principal;
   animation-duration: 20s;
-  animation-iteration-count: infinite;
-  display: flex;
+  animation-iteration-count: infinite;  
 }
 
 @keyframes principal {
-  0%   {background-image: url("../images/hotelpravoce1.jpg"); left:0px; top:0px;}
+  0% {
+    background-image: url("../images/hotelpravoce1.jpg");
+    left: 0px;
+    top: 0px;
+  }
+
+  25% {
+    background-image: url("../images/hotelpravoce2.jpg");
+    left: 200px;
+    top: 0px;
+  }
+
+
+  50% {
+    background-image: url("../images/hotelpravoce3.jpg");
+    left: 0px;
+    top: 0px;
+  }
+
+
+  75% {
+    background-image: url("../images/hotelpravoce4.jpg");
+    left: 200px;
+    top: 0px;
+  }
+
+  100% {
+    background-image: url("../images/hotelpravoce5.jpg");
+    left: 200px;
+    top: 0px;
+  }
+
+}
+
+
+
+
+
+
+
+/*************CONFIGURAÇÃO CSS AREA FOOTER*************/
+
+/*Aqui começa as configurações css do rodapé do site*/
+.footer-area {
+   grid-area: afooter;  
+   
+}
+.footer-item{
+  display: flex;
+  gap: 10px;  
+}
+.footer-titulo{
+  font-weight: bold;
+  font-size: 20px;
+}
+.footer-info{
+  background-color: #fe0000;
+   width: 30%;
+   /*margin: 5px;*/
+}
+.footer-novidade {
+  background-color: #fe0000;
+  width: 40%;
+  /* margin: 5px;*/
+}
+.footer-rede {
+  background-color:#fe0000;
+ width: 30%;
+ /*margin: 5px;*/
+}
+.footer-direito span{
+  color: #fe0000;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center; 
+}
+
+
+
+
+
+
+
+
+/**********CSS DA PAGINA HOTEL**********/
+.hotel-banner-pisca{
+  display: flex;
+  position: absolute;
+  margin-left: 350px; 
+  bottom:120px;
+  left:0; 
+  width: 500px;
+  height: 250px; 
+  filter: drop-shadow(0px 2px 15px #000);
+  animation: 2.5s infinite;
+  animation-name: hotel-banner-pisca;
+  z-index: 1;
+}
+@keyframes hotel-banner-pisca {
+0% {
+  transform:  scale(0.8);
+}
+5% {
+  transform:  scale(0.9);
+}
+10% {
+  transform:  scale(0.8);
+}
+15% {
+  transform:  scale(1);
+}
+50% {
+  transform:  scale(0.8);
+}
+100% {
+  transform:  scale(0.8);
+}
+}
+.hotel-video{
+  padding:56.48% 0 0 0;
+  position:relative;
+ }
+ .hotel-video-conteudo{
+   position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   pointer-events:none;
+   overflow:hidden;  
+ }
+.hotel-imagem-tampa-player{
+  position:absolute;   
+  bottom:-120px;
+  left:0;
+  width:100%;
+  height: 20%;
+}
+.hotel-entretenimento-geral{
+  display: flex;  
+  flex-direction: row;
+  gap:10px;
+  justify-content:center; /*alinha o conteúdo na horizontal*/  
+  align-items: center; /*alinha na vertical*/
+  width:100%;
+  height: 100%;  
+}
+.hotel-entretenimento-item{
+  flex-basis: 1px;   
+} 
+.hotel-entretenimento-item-titulo{
+  font-size: 70px;
+  font-weight: 500;
+  font-family: "Nove","sans-serif";
+  text-transform: uppercase;
+  text-align: center;
+}
+.hotel-entretenimento-item-subtitulo{
+  font-size: 19px;
+  font-weight: 500;
+  text-align: center;
+}
+.hotel-entretenimento-item img{
+  border-radius:10px;
+}
+.hotel-testemunho-geral{  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center; 
+  align-items: center; 
+  margin: 10px; 
+}
+.hotel-testemunho-titulo{ 
+  font-size: 70px;
+  font-weight: 500;
+  font-family: "Nove","sans-serif";
+  text-transform: uppercase;
+  text-align: center;  
+}
+.hotel-testemunho-item{  
+  display: flex; 
+  font-size: 19px;
+  font-weight: 500;  
+  background-color: #c19676;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex-flow:row; 
+}
+.hotel-testemunho-item-imagem img{
+  border-radius: 100px;
+  width:150px;
+  height: 150px;   
+}
+.hotel-testemunho-item-paragrafo{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  text-align: center;  
+}
+.hotel-testemunho-item-nome{
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px; 
+  margin: 0 20px;
+  text-align: center; 
+}
+.hotel-footer{
+  text-align: center;
+}
+
+
+
+
+/**PAGINA RESERVA - RESERVA FINAL**/
+.pagina-reserva-area { 
+  background-color: #fe0000;
+  grid-area: areserva;
+  display:flex;
+  justify-content: space-around;
+  position:fixed;
+  margin-top: 65px;
+  width:100%;
+  z-index: 1;
+ /* width: 1330px; */
+  }
+.pagina-reserva-area-itens{
+  display: flex;
+  color: #ffffff;  
+}
+.pagina-reserva-form{
+  background-color:#fe0000;
+  color: black;
+  display: flex;  
+  flex-wrap: wrap;
+}
+.pagina-reserva-informativo{
+  margin-top: 10px;
+}
+.pagina-reserva-form-estadia{
+  display: inline-block;
+}
+.pagina-reserva-form-estadia-label {
+  display: inline-block;
+}
+
+.pagina-reserva-form-quarto{
+  display: inline-block;
+}
+.pagina-reserva-form-quarto-label{
+  display: inline-block;
+}   
+.pagina-reserva-form-adulto{
+  display: inline-block;
+}
+pagina-reserva-inicio{
+}           
+.pagina-reserva-form-crianca{
+  display: inline-block;
+}          
+.pagina-reserva-form-estadia-input{
+  display: inline-block;
+}
+.pagina-reserva-form-pesquisar{
+  display: inline-block;
+  margin-left: 10px;
+  background: #f36621;
+  color: #fff;
+  padding: 4px 6px;
+  font-weight: 600;
+  border: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.pagina-reserva-descrição-foto-venda{
+  display: flex;
+}
+
+.pagina-reserva-descrição-foto-venda{
+  margin-top: 100px;
+}
+/*.reserva-form-botao-rodape {
+  display: inline;
+}*/
+
+
+
+
+
+/******AQUI COMEÇA 0 CSS DA PAGINA ACOMODÇÕES*******/
+.acomodacao-todo-conteudo-area {
+  background-color: white;
+  grid-gap: 10px; 
+  max-height: inherit;
+  text-align: center;   
+}
+
+.acomodacoes-titulo-background {
+  background-image: url("../images/background1.png");
+  background-repeat: no-repeat;
+  padding: 200px;
+}
+.acomodacoes-titulo-h1 {
+  color: #ffffff;
+  font-size: 64px;
+  margin: 0px 0px 15px;
+  text-align: center;
+}
+.acomodacoes-texto-background {
+  background-image: url("../images/background.png");
+  background-repeat: no-repeat;
+  color: #ffffff;  
+  font-size: 14px;
+  padding: 200px;
+}
+.acomodacao-quarto{
+}
+.acomodacao-quarto-titulo{
+  text-align: center;
+}
+.acomodacao-quarto-img{
+  width: 1110px;
+  height: 608px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;
+}
+
+
+
+
+
+/*********AQUI COMEÇA O CSS DA PAGIAN CIDADE*********/
+.sessao-cidade-banner-imagem-topo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:220px;
+  position:relative;
+  /*  z-index:2;*/
+}
+.sessao-cidade-banner-titulo{
+  font-size:60px;
+  /*font-weight:500;*/
+  font-weight: bold;
+  margin:0;
+  text-shadow:8px 8px 4px black;
+  color:#fff;
+  text-align: center;
+  text-decoration: blink;  
+}
+.sessao-cidade-banner-subtitulo{
+  text-align: center;
+  font-size:40px;
+  font-weight:500;
+  margin:0;
+  color:#fff;
+  text-shadow:10px 10px 4px black; 
+}
+.sessao-cidade-banner-texto{
+  max-width:900px;
+  margin:60px auto 90px;
+  text-align:center
+}
+.sessao-cidade{
+  display: flex;
+  justify-content: center;
+  vertical-align:middle;
+}
+.sessao-cidade img{
+  border-radius:20px;
+  margin: 60px 0;  
+}
+.sessao-cidade div{
+ padding: 30px;  
+ text-align: center;
+}
+.sessao-cidade-titulo h1{
+  color:#404040;
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+.sessao-cidade h2{
+  color:#404040;
+  font-size: 30px;
+  font-weight: bold;
+  margin:0;
+}
+.sessao-cidade p{
+  width: 300px;
+  text-align: left; 
+  margin: 30px 0; 
+  font-size:15,2px;
+  color:#333;
+  font-weight: 300px;  
+}
+.sessao-cidade-footer{
+  text-align: center;
+}
+
+
+
+
+
+/***AQUI CSS PAGINA CONTATO***/
+.pagina-contato-secao-banner{ 
+}
+.pagina-contato-secao-banner-img-topo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:220px;
+  position:relative;  
+}
+.pagina-contato-secao-banner-conteudo{
+}
+.pagina-contato-secao-banner-titulo{
+  font-size:60px;
+  font-weight: bold;
+  margin:0;
+  text-shadow:8px 8px 4px black;
+  color:#fff;
+  text-align: center;
+  text-decoration: blink; 
+}
+.pagina-contato-secao-banner-subtitulo{
+  text-align: center;
+  font-size:40px;
+  font-weight:500;
+  margin:0;
+  color:#fff;
+  text-shadow:10px 10px 4px black; 
+}
+.pagina-contato-secao-banner-texto{
+  max-width:900px;
+  margin:60px auto 90px;
+  text-align:center
+}
+.pagina-contato{ 
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.pagina-contato-form{
+  display: flex;
+  flex-flow: row wrap; 
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  background-color: #FF5722;
+  border-radius: 20px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.pagina-contato-secao{  
+}
+.pagina-contato-titulo{
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+}
+.pagina-contato-controle-grupo{
+  display: inline-block;
   
-  25%  {background-image: url("../images/hotelpravoce2.jpg"); left:200px; top:0px;}
+}
+.pagina-contato-controle-label{ 
+}
+.pagina-contato-botao-enviar{
+  margin-left:  80px;
+}
+.pagina-contato-textarea{
+ padding: 30px;
+}
+.pagina-contato-mapa{
+  display: flex;
+  justify-content: center;
+  vertical-align:middle;
+  padding: 30px;  
+  text-align: center;  
+}
+.pagina-contato-mapa-subtitulo{
+  text-align: center; 
+}
+.pagina-contato-form-newsletter{
+  display: flex;
+  justify-content: center;
+  vertical-align:middle;
+  padding: 30px;  
+ text-align: center;
+}
+.contato-footer{
+  text-align: center;
+}
+ 
   
  
-  50%  {background-image: url("../images/hotelpravoce3.jpg"); left:0px; top:0px;}
-  
-  
-  75%  {background-image: url("../images/hotelpravoce4.jpg"); left:200px; top:0px;}
-  
-  100% {background-image: url("../images/hotelpravoce5.jpg"); left:200px; top:0px;}
-  
- }
 
 
 
-/*Aqui começa as configurações css do raodapé do site*/
-.footer{
-  background-color: #fe0000;
-  grid-area: afooter;
+
+/****AQUI COMEÇA O CSS DA PAGINA AGRADECIMENTO****/
+.agradecimento-banner{ 
+}
+.agradecimento-banner-imagem-topo{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-top:500px;
+  position:relative;  
+}
+.agradecimento-banner-conteudo{  
+}
+.agradecimento-banner-titulo{
+  font-size:60px;
+  /*font-weight:500;*/
+  font-weight: bold;
+  margin:0;
+  text-shadow:8px 8px 4px black;
+  color:#fff;
   text-align: center;
-  line-height: 40px;  
-  font-size: 12px;
-  margin-top: 20px;
+  text-decoration: blink;  
+  margin-top: 200px;    
+}
+.agradecimento-banner-subtitulo{
+  text-align: center;
+  font-size:40px;
+  font-weight:500;
+  margin:0;
+  color:#fff;
+  text-shadow:10px 10px 4px black;   
+}
+.agradecimento-banner-texto{
+  max-width:900px;
+  margin:60px auto 90px;
+  text-align:center;  
+}
+.agradecimento-banner-pisca{
+  display: flex;
+  position: absolute;
+  margin-left: 350px; 
+  bottom:1px;
+  left:0; 
+  width: 500px;
+  height: 250px; 
+  filter: drop-shadow(0px 2px 15px #000);
+  animation: 2.5s infinite;
+  animation-name: hotel-banner-pisca;
+  z-index: 1;  
+}
+.agradecimento-banner-video{
+  padding:56.48% 0 0 0;
+  position:relative;  
+}
+.agradecimento-banner-conteudo{
+  position:absolute;
+   top:0;
+   left:0;
+   width:100%;
+   height:100%;
+   pointer-events:none;
+   overflow:hidden;    
+}
+.agradecimento-tampa-banner-player{
+  position:absolute;   
+  bottom:-706px;
+  left:0;
+  width:100%;
+  height: 20%; 
 }
 
-.footer span{
-background-color: white;  
-font-weight: bold;
-}
+ 
 
 
 
 
 
-/*Daqui pra baixo é como eu vou fazer o layout responsivo*/
+
+
+
+
+
+
+
+
+
+
+/*************************************/
+/******* LAYOUT RESPONSIVO***********/
+/*COMEÇA O CSS DO LAYOUT RESPONSIVO*/
+/*************************************/
 @media screen and (max-width:1000px) {
-   
-/*Aqui começa o layouto responsivo da parte do topo*/
-  .topo{    
-    flex-direction: column;
-    justify-content:space-evenly; 
-    margin-top: 75px;      
-  }  
   
-  
-  /*Aqui começa o layouto responsivo da parte da logomarca do topo*/
-  .logo img{
-  margin-left: 10px;
-  margin-top: -7px;
+/*LOGOMARCA TOPO - Responsivo CSS 1000PX*/
+ .logo-area{
+  margin-left: 20px;
   height: 13.5%;
+  z-index: 2;
   }
 
+  
+/*MENU TOPO - Responsivo CSS 1000PX*/
+.menu-area-geral{
+  z-index: 2;
+}
+.menu-area-links {
+  margin-top: 80px;  
+}
 
-  /*Aqui começa o layouto responsivo da parte do menu do topo*/  
-  .menu{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    top: 0px;
-    padding: 70px;
-    margin-left: -30px;
-    background-color: white;        
-  }  
+
+/****BARRA RESERVA PAGINA INDEX - Responsivo CSS 1000PX ****/
+.barra-reserva-area-index{
+  margin-top: 130px;
+  z-index: 2;
+}
+
+
+/********SLIDE PAGINA INDEX 1000PX- Responsivo CSS*********/
+.slider-area{
+  margin-top: 100px;
+}
+
+
+/********MENU PAG HOTEL - Responsivo CSS 1000PX**********/
+.pagina-hotel-espaçamento-video{
+  padding: 113px;
+}
+.hotel-entretenimento-geral{ 
   
+}
+.hotel-entretenimento-item{
+  margin-top:50px;   
+}
+.hotel-entretenimento-item img{
+  width: 100px;  
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.hotel-entretenimento-item-titulo{
+  font-size: 50px;  
+}
+.hotel-imagem-tampa-player {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  height: 20%;
+}
+.hotel-banner-pisca{
+  width: 100px;
+  height: 100px;
+  margin-bottom: 100px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 100px;
+}
+.hotel-testemunho-titulo{
+ font-size: 34px; 
+}
   
-/*Aqui começa o layout responsivo do rodapé*/
-  .footer{
-  line-height: 20px;  
-  font-size: 10px;
+
+
+
+/***MENU PAG RESERVA - Responsivo CSS 1000PX***/
+.pagina-reserva-area{
+  margin-top: 140px;  
+}
+.pagina-reserva-area-itens{
   flex-direction: column;
-    justify-content:space-evenly; 
-    background-color: #fe0000;
+  flex-wrap: wrap;   
   }
-  .footer span{
-    display: inside;
-    background-color: white;
-    }
-  
+.pagina-reserva-form{
+    color: #ffffff;   
+}
+.pagina-reserva-informativo{
+  margin-top: 250px;
+}
+.pagina-reserva-descrição-foto-venda{
+  margin-top: 30px;
 }
 
 
-@media screen and (max-width:500px){
-
-/*Aqui começa o layouto responsivo da parte principal o meio*/
-.principal{ 
-  height: 740px;
-  max-width: 400px;  
-  
+/***MENU PAG ACOMODAÇÕES 1000PX***/
+.acomodacoes-titulo-background{
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;  
 }
+.acomodacoes-titulo-h1{
+ margin-left: 100px;
+ margin-top: 100px;
 }
-
-
-
-
-
-     
-
+.acomodacoes-texto-chamada{
+ margin-left: -220px;
+ text-align: center; 
+}
+.acomodacoes-texto-background{
+  max-width: 320px;
+  max-width: 480px;
             
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;  
+  font-size: 14px; 
+}
+.acomodacao-quarto{
+}
+.acomodacao-quarto-titulo{
+text-align: left;
+}
+.acomodacao-quarto-img{
+  width: 450px;
+  height: 304px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;
+  margin-right: 150px;
+}
 
+
+
+/**MENU PAG CIDADE - Responsivo CSS 1000PX**/
+.sessao-cidade  {     
+  display: inline-block;
+  text-align: center;
+  margin-left: -25px;
+}
+.sessao-cidade img{
+  width: 83%;
+  height: 100%;
+  margin-top: -30px;
+}
+.sessao-cidade-banner-titulo{
+  margin-top: 100px;
+}
+.sessao-cidade-banner-subtitulo{
+  filter: drop-shadow(rgb(0, 0, 0) 2px 4px 15px);  
+}
+.sessao-cidade-banner-imagem-topo{
+  width: 250px;
+  height: 304px;
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;
+}
+
+
+
+
+/*** PAG CONTATO - Responsivo 1000PX***/
+.pagina-contato-secao-banner{  
+}
+.pagina-contato-secao-banner-img-topo{
+  display:flex;
+  align-items:center;
+  padding-top:220px; 
+  position:relative;  
+  justify-content: center;   
+}
+.pagina-contato{    
+    display: flex;    
+    height: 0%;
+    justify-content: center;
+    align-items: center;  
+    flex-direction:column;
+    width: 0px;  
+    margin-left: -280px;
+}
+.pagina-contato-form{
+  margin-left: 620px; 
+}
+
+.pagina-contato-form input{  
+  width: 80px;
+}
+.pagina-contato-botao-enviar{ 
+}
+.pagina-contato-textarea{  
+}
+.contato-footer{
+  text-align: center;
+}
+}
+
+
+
+
+
+
+@media screen and (max-width:700px){
+
+/*MENU - Responsivo CSS 700PX*/
+  .menu-area-geral{
+  justify-content: center;  
+  }
+  .menu-area-links{
+  font-size: 6.9px;
+  font-weight: 500;
+  gap: 2px;  
+  }
+  
+  /*HOTEL- Responsivo CSS 700PX*/
+  .hotel-imagem-tampa-player{
+    position:absolute;   
+    bottom:-155px;
+    left:0;
+    width:100%;
+    height: 20%;
+  }
+  .pagina-hotel-espaçamento-video{
+    padding: 170px;
+  }
+  .hotel-banner-pisca {  
+    display: flex;
+    position: absolute;
+    margin-left: -2px;
+    bottom: 0px;
+    left: 0px;
+    filter: drop-shadow(rgb(0, 0, 0) 0px 2px 15px);  
+    z-index: 1;
+  }
+  .hotel-entretenimento-item-titulo{
+    font-size: 30px;    
+  }
+  .hotel-entretenimento-item{
+    z-index: 1;
+  }
+
+
+
+  /*PAG ACOMODAÇÕES - RESPONSIVA 700*/
+  .acomodacao-todo-conteudo-area img {
+    width: 0px;
+    height: 200px;
+    max-height: 70%;
+    min-width: 70%;
+    object-fit: cover;
+    margin-left: -100px;    
+    border-radius: 30px;  
+  }
+  .acomodacoes-titulo-background{
+    max-height: 70%;
+    min-width: 70%;   
+  }
+  .acomodacoes-titulo-h1{
+    font-size: 50px;
+    margin-right: -220px;
+  }
+  .acomodacoes-texto-chamada{
+    text-align: left;
+  }
+  .acomodacoes-texto-background{
+    max-height: 70%;
+    min-width: 70%;
+  }
+
+/*SLIDE - Responsivo CSS 700PX*/
+  .slide-area-conteudo{
+    margin-top: 220px;
+    display: flex;  
+    object-fit: cover; 
+    height: 40vh;
+    flex-grow: 1;
+    width: 100%;
+    max-height: 100vh;
+    min-width: 0;
+    margin-left: 0px;
+    vertical-align: bottom;
+  } 
+
+/***CONTATO - Responsivo CSS 700PX***/
+
+
+
+@media screen and (max-width:300px){ 
+/*SLIDE AREA  - Responsivo 300PX*/
+.slide-area-conteudo{
+  margin-top: 220px;
+  display: flex;  
+  object-fit: cover; 
+  height: 40vh;
+  flex-grow: 1;
+  width: 100%;
+  max-height: 100vh;
+  min-width: 0;
+  margin-left: 0px;
+  vertical-align: bottom;  
+}  
+}

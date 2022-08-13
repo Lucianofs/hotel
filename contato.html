@@ -7,52 +7,526 @@
     <title>Hotel Pra Você</title>
     <link rel="stylesheet" href="assets/styles/hotel.css" />
   </head>
-  <body>
 
+  <body>
     <header>
-      <div class="voltar">
-        <ul>
-          <li><a href="../hotel/index.html">voltar</a></li>
-        </ul>
+      <div class="logo-area">
+        <div class="logo-img">
+          <a href="http://127.0.0.1:5500/">
+            <img class="logoimg" src="assets/images/hotepravocelogo.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-area-geral">
+        <div class="itens-menu-area">
+          <ul class="menu-area-links">
+            <li class="menu-link-individual">
+              <a class="menu-url" href="ohotel.html">o hotel</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="reserva.html">reserva</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="acomodacoes.html">acomodações</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="cidade.html">cidade</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="contato.html">contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="barra-reserva-area-index">
+        <div class="barra-reserva-area-itens-index">
+          <span class="barra-reserva-spam-index"> reserva<br />Online</span><a href="index.html">Voltar</a>
+
+          <form
+            class="barra-reserva-form-index"
+            target="_blank"
+            action="https://formsubmit.co/professorluciano1@gmail.com"
+            method="POST"                 
+          >
+            <fieldset class="fiesdeset">
+              <div class="barra-reserva-form-chegada-index">
+                <label class="barra-reserva-form-chegada-label-index">Chegada ↴</label>
+                <br />
+                <input type="date" name="Data Chegada" />
+              </div>
+
+              <div class="barra-reserva-form-saida-index">
+                <label class="barra-reserva-form-saida-label-index">Saida ↴</label>
+                <br />
+                <input type="date" name="Data Saida" />
+              </div>
+              <div class="barra-reserva-form-fone-index">
+                <label class="barra-reserva-form-fone-label-index">Fone↴</label>
+                <br />
+                <input type="fone" name="Fone"  required />
+              </div>
+
+              <div class="barra-reserva-form-adulto-index">
+                <label class="inicio" style="margin: 0">Adultos</label>
+                <select name="Quantidade de Adulto">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+
+              <div class="barra-reserva-form-crianca-index">
+                <label class="inicio" style="margin: 0">Crianças</label>
+                <select name="Quantidade de Criança">
+                  <option value="0" selected="selected">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              
+
+              <div class="barra-reserva-form-check-in-index">
+                <a href="reserva.html" class="botao-checkin" target="_blank"
+                  >Pré-checkin</a
+                >
+                
+              </div>
+
+              <input
+                type="submit"
+                style="
+                  border-radius: 5px;
+                  border: 1px solid #dde2e5;
+                  margin-left:  -2px;
+                "
+                placeholder="enviar"
+                value="Enviar"
+              />
+              
+            </fieldset>            
+          </form>
+        </div>
       </div>
     </header>
-    
-    <div>
-      <p>Contato</p>
-      <br />
-      <br />           
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-      </p>      
-      <br />   
-      <br />  
-      <br />   
-      <br /> 
-      <br />        
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.   
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-    </div>
+
+    <main>
+      <div class="pagina-contato-secao-banner">
+        <div
+          class="pagina-contato-secao-banner-img-topo"
+          style="background-image: url(/assets/images/topo/cidadetopo.jpg)"
+        >
+          <div class="pagina-contato-secao-banner-conteudo">
+            <h1 class="pagina-contato-secao-banner-titulo">CONTATO</h1>
+            <h2 class="pagina-contato-secao-banner-subtitulo">************</h2>
+          </div>
+        </div>
+
+        <div
+          class="pagina-contato-secao-banner-texto"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
+          <div class="pagina-contato-secao-banner-texto">
+            <p class="pagina-contato-secao-banner-texto" data-aos="fade-hight">
+              Estamos à disposição para atender a qualquer dúvida ou necessidade
+              sobre nossas operações. Preencha o formulário abaixo, retornaremos
+              o mais rápido possível.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="pagina-contato-secao-form">
+        <div class="pagina-contato" data-aos="fade-left" data-aos-delay="100">
+          <form class="pagina-contato-form"
+            action="https://formsubmit.co/professorluciano1@gmail.com"
+            method="POST"            
+          >
+            <input type="hidden" name="_template" value="table" />
+
+            <div class="pagina-contato-secao">
+              <div class="pagina-contato-controle-grupo">
+              <h2 class="pagina-contato-titulo">
+                Reservas e Informações<br />
+                +55 (00) 0000-0000 <br />
+                +55 (00) 0000-0000
+              </h2>
+
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="text"
+                  name="nome"
+                  style="width: 350px"
+                  id="control-label"
+                  placeholder="Nome"
+                />
+              </div>
+            </div>
+
+            <div class="pagina-contato-secao">
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="email"
+                  name="email"
+                  id="control-label"
+                  placeholder="E-mail"
+                />
+              </div>
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="tel"
+                  name="telefone"
+                  id="control-group"
+                  placeholder="Telefone"
+                />
+              </div>
+            </div>
+
+            <div class="pagina-contato-secao">
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <select id="control-label" name="Estado">
+                  <option value="Estado" name="Estado">Estado</option>
+                  <option value="AC">AC</option>
+                  <option value="AL">AL</option>
+                  <option value="AP">AP</option>
+                  <option value="AM">AM</option>
+                  <option value="BA">BA</option>
+                  <option value="CE">CE</option>
+                  <option value="DF">DF</option>
+                  <option value="ES">ES</option>
+                  <option value="GO">GO</option>
+                  <option value="MA">MA</option>
+                  <option value="MT">MT</option>
+                  <option value="MS">MS</option>
+                  <option value="MG">MG</option>
+                  <option value="PA">PA</option>
+                  <option value="PB">PB</option>
+                  <option value="PR">PR</option>
+                  <option value="PE">PE</option>
+                  <option value="PI">PI</option>
+                  <option value="RJ">RJ</option>
+                  <option value="RN">RN</option>
+                  <option value="RS">RS</option>
+                  <option value="RO">RO</option>
+                  <option value="RR">RR</option>
+                  <option value="SC">SC</option>
+                  <option value="SP">SP</option>
+                  <option value="SP">SE</option>
+                  <option value="TO">TO</option>
+                </select>
+              </div>
+
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="text"
+                  name="Cidade"
+                  id="control-label"
+                  placeholder="Cidade"
+                />
+              </div>
+            </div>
+
+            <div class="pagina-contato-secao">
+            <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="date"
+                  id="control-label"
+                  name="Data da Entrada"
+                />
+              </div>
+
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <input
+                  type="date"
+                  name="Data da Saida"
+                  id="control-group"                  
+                />
+              </div>
+              <div class="pagina-contato-controle-grupo">
+                <label class="pagina-contato-controle-label"></label>
+                <select name="Assunto" id="controle-label">
+                  <option value="Assunto" name="Assunto">Assunto</option>
+                  <option value="Dúvidas" name="Dúvidas">Dúvidas</option>
+                  <option value="Sugestões" name="Sugestões">Sugestões</option>
+                  <option value="Reclamacões" name="Reclamacões">
+                    Reclamacões
+                  </option>
+                  <option value="Elogios" name="Elogios">Elogios</option>
+                  <option value="Arrependimento" name="Arrependimento">
+                    Arrependimento
+                  </option>
+                </select>
+              </div>
+            </div>
+
+            <div class="pagina-contato-controle-grupo">
+              <label class="pagina-contato-controle-label"></label>
+              <input
+                type="textarea "
+                name="Texto Escrito"
+                style="
+                  width: 100%;
+                  height: 180px;
+                  border-radius: 5px;
+                  border: 1px solid #dde2e5;
+                "
+                id="controle-label"
+                class="pagina-contato-textarea"
+                placeholder="Mensagem"
+              />
+            </div>
+
+            <div class="pagina-contato-controle-grupo">
+              <label class="pagina-contato-controle-label"></label>
+
+              <input
+                type="hidden"
+                name="_next"
+                value="http://127.0.0.1:5500/agradecimento.html"
+              />
+              <input
+                type="submit"
+                style="
+                  width: 100%;
+                  height: 180px;
+                  border-radius: 5px;
+                  border: 1px solid #dde2e5;
+                "
+                id="controle-label"
+                class="pagina-contato-botao-enviar"
+                placeholder="enviar"
+                value="Enviar"
+              />
+              <input
+                type="hidden"
+                name="_autoresponse"
+                value="Essa é uma resposta automátiva. Assim que nossos atendentes acessar ao seu e-mail ele será respondido. Desde já seja bem vindo (a)! Estamos felizes por escolher o HOTEL PRA VOCÊ. Breve nos conheceremos."
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="pagina-contato-mapa" data-aos="fade-right">
+        <div class="mapouter">
+          <h1
+            class="pagina-contato-mapa-subtitulo aos-init aos-animate"
+            style="margin-bottom: 30px"
+            data-aos="fade-down"
+          >
+            Localização
+          </h1>
+          <div class="pagina-contato-mapa">
+            <iframe
+              src="https://maps.google.com/maps?q=nordeste&amp;t=k&amp;z=5&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              id="gmap_canvas"
+              frameborder="0"
+              scrolling="no"
+              style="width: 600px; height: 400px"
+            >
+            </iframe>
+            <a href="https://fnftest.net" style="display: none"
+              >FNF Test Unblocked</a
+            >
+            <style>
+              .mapouter {
+                position: relative;
+                text-align: right;
+                height: 450px;
+                width: 600px;
+              }
+            </style>
+            <a
+              href="https://googlemapsiframegenerator.com"
+              style="display: none"
+              >Google Maps Iframe Generator - Free Html Embed Code</a
+            >
+            <style>
+              .gmap_canvas {
+                overflow: hidden;
+                background: none !important;
+                height: 400px;
+                width: 600px;
+              }
+            </style>
+          </div>
+        </div>
+      </section>
+
+      <section class="pagina-contato-form-newsletter" data-aos="fade-left" data-aos-delay="100">
+        <div>
+          <div style="text-align: center">
+            <h1>CADASTRE-SE PARA RECEBER PROMOÇÕES E NOVIDADES!</h1>
+            <h3>SUBSCREVER NEWSLETTER</h3>
+          </div>
+
+          <div>
+            <form
+              method="post"
+              id=""
+              action="https://formsubmit.co/professorluciano1@gmail.com"
+            >
+              <div class="" id="">
+                <label>Nome</label>
+                <input
+                  type="text"
+                  name="Nome"
+                  id=""
+                  spellcheck="false"
+                  data-ms-editor="true"
+                />
+                <input
+                  type="hidden"
+                  name="label-dmform-0"
+                  value="Nome"
+                  id=""
+                  />
+              </div>
+
+              <div>
+                <label>E-mail</label>
+                <input />
+                <input
+                  type="hidden"
+                  name="E-mail"
+                  value="E-mail"
+                  id=""                  
+                />
+              </div>
+
+              <span id="" ></span>
+
+              <div id="">
+                <input
+                  name="submit"
+                  type="submit"
+                  value="Subscrever"
+                  id=""
+                />
+              </div>
+
+              <input
+                name=""
+                type="hidden"
+                id=""                
+                value=""
+                data-dec="true"
+              />
+              <input class="" type="hidden" name="action" value="" id="" />
+              <input
+                name=""
+                type="hidden"
+                value="Subscrição Newsletter"
+                id=""                
+              />
+            </form>
+          </div>
+
+          <div style="display: none" id="">
+            <p>
+              Obrigado por entrar em contato. Retornaremos assim que possível
+            </p>
+          </div>
+          <div class="" style="display: none" id="">
+            <p>
+              Desculpe, houve um erro ao enviar a mensagem. Por favor, tente
+              novamente mais tarde
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="contato-footer">
+      <div class="footer-area">
+        <div class="footer-item">
+          <div class="footer-info">
+            <br />
+            <strong class="footer-titulo">Reservas e Informações</strong>
+            <br />
+            <br />
+            +55 (00) 9000-0000
+            <br />
+            +55 (00) 9000-0000
+            <br />
+            <br />
+            hotelpravoce@hotelpravoce.com.br
+            <br />
+            <br />
+          </div>
+
+          <div class="footer-novidade">
+            <br />
+            <strong class="footer-titulo">Receba Novidades e Ofertas</strong>
+            <br />
+            <br />
+            <label>Email</label>
+            <input type="email" name="email" />
+            <br />
+            <br />
+            Não fique de fora dessa.
+          </div>
+
+          <div class="footer-rede">
+            <br />
+            <strong class="footer-titulo"
+              >Siga o Hotel Pra Você nas redes</strong
+            >
+            <br />
+            <br />
+            <a href="facebook.com.br"
+              ><img src="assets/icons/facebook.png"
+            /></a>
+            <a href="instagram.com.br"
+              ><img src="assets/icons/instagram.png"
+            /></a>
+            <a href="youtube.com.br"><img src="assets/icons/youtube.png" /></a>
+            <a href="twitter.com.br"><img src="assets/icons/twitter.png" /></a>
+          </div>
+        </div>
+        <div class="footer-direito">
+          &copy; Todos os direitos reservados: <span>Hotel Pra Você.</span>
+        </div>
+      </div>
+    </footer>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+      })
+    </script>
+
+    <script>
+      hljs.initHighlightingOnLoad()
+
+      $('.hero__scroll').on('click', function (e) {
+        $('html, body').animate(
+          {
+            scrollTop: $(window).height()
+          },
+          1200
+        )
+      })
+    </script>
   </body>
 </html>
-
-
-
-
-

@@ -4,55 +4,547 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hotel Pra Você</title>
+    <title>Hotel Pra você - Reserva</title>
     <link rel="stylesheet" href="assets/styles/hotel.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" rel="stylesheet" />
+    <script src="//code.jquery.com/jquery-2.0.3.min.js"></script>
+
+ <style>
+  
+.pagina-reserva-quarto-ul-fotos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;  
+}
+.pagina-reserva-quarto-li-fotos {
+  height: 40vh;
+  flex-grow: 1;
+  
+}
+.pagina-reserva-quarto-li-fotos li:last-child {
+  flex-grow: 10;
+  
+}
+.pagina-reserva-quarto-img-foto{
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+  vertical-align: bottom;
+  border-radius: 30px;
+}
+@media (max-aspect-ratio: 1/1) {
+  .pagina-reserva-quarto-li-fotos {
+    height: 30vh;
+  }
+}
+@media (max-height: 480px) {
+  .pagina-reserva-quarto-li-fotos {
+    height: 80vh;
+  }
+}
+@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
+  .pagina-reserva-quarto-ul-fotos {
+    flex-direction: row;
+  }
+  .pagina-reserva-quarto-li-fotos {
+    height: auto;
+    width: 100%;
+  }
+  .pagina-reserva-quarto-img-foto{
+    width: 100%;
+    max-height: 75vh;
+    min-width: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+    </style>
   </head>
   <body>
     
-    <header>
-      <div class="voltar">
-        <ul>
-          <li><a href="../hotel/index.html">voltar</a></li>
-        </ul>
-      </div>
-    </header>
 
-    <div>
-      <p>Contato</p>
-      <br />
-      <br />           
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-      </p>      
-      <br />   
-      <br />  
-      <br />   
-      <br /> 
-      <br />        
-      <br />
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.   
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ipsam ipsum sunt molestiae porro aperiam necessitatibus. Quis, esse, cumque nostrum id, quos aliquam quae quas porro sequi quo tempora tenetur.
-    </div>
+    <header>
+      <div class="logo-area">
+        <div class="logo-img">
+          <a href="http://127.0.0.1:5500/">
+            <img class="logoimg" src="assets/images/hotepravocelogo.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-area-geral">
+        <div class="itens-menu-area">
+          <ul class="menu-area-links">
+            <li class="menu-link-individual">
+              <a class="menu-url" href="ohotel.html"> hotel</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="reserva.html">reserva</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="acomodacoes.html">acomodações</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="cidade.html">cidade</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="contato.html">contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>    
+    
+      <section>         
+      <div class="pagina-reserva-area" >
+        <div class="pagina-reserva-area-itens">
+          
+  
+          <form class="pagina-reserva-form" action="https://formsubmit.co/professorluciano1@gmail.com"
+          method="POST">
+            <fieldset class="fiesdeset">
+              <a href="index.html">Voltar </a>
+  
+              <div class="pagina-reserva-form-estadia">
+                <label class="pagina-reserva-form-estadia-label">DATAS DA ESTADIA ↴</label>
+                <br />
+                <input type="text" name="estadia" id= "date" value="10/06/2022 - 10/07/2022" />
+              </div>              
+
+              <div class="pagina-reserva-form-quarto">
+                <label class="pagina-reserva-form-quarto-label">
+                  &emsp; QUARTOS E HÓSPEDES ↴</label>
+                <br>
+                <label class="inicio">&emsp; Nº de Quartos</label>
+                <select name="Nº de Quartos">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+              
+              <div class="pagina-reserva-form-adulto">
+                <label class="inicio">Adultos</label>
+                <select name="QT Adulto">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+  
+              <div class="pagina-reserva-form-crianca">
+                <label class="inicio">&nbsp Nº de Crianças 0 aos 12 Anos</label>
+                <select name="QT criança">
+                  <option value="0" selected="selected">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>                  
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                </select>
+              </div>
+              <div class="barra-reserva-form-fone-index">
+                <label class="barra-reserva-form-fone-label-index">Fone↴</label>
+                <br />
+                <input type="fone" name="Fone" required/>
+              </div>
+              
+              <div class="pagina-reserva-form-pesquisar">
+                <button type="submit" class="botao-pesquisar type=" submit" id="bt-pesquisa" data-enabled="enabled">
+                  Buscar
+                </button>
+              </div>  
+              
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </section>
+    
+    
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="pagina-reserva-informativo" style="text-align: center;"  > Preencha os dados acima para fazer a sua reserva. Após confirmação de sua reserva por um de nossos atendentes  você pode comprá-la clicando na caixa ao lado do quarto desejado e será direcionado ao nosso carrinho de compra onde poderá efetuar o pagamento. Desde já o HOTEL PRA VOCÊ agradece.</div>
+      <section class="pagina-reserva-descrição-foto-venda" data-aos="fade-left" data-aos-delay="150">
+        
+        <input type="checkbox" name="quarto-premium" value="blue"  onclick="window.location.href = 'https://pag.ae/7YuFREEX9'" style="  width: 168px;  margin-right: 8px; color: #999; ">
+               
+        <div>
+          <h2>Quarto Premium Solteiro.</h2>
+          <p data-aos="fade-hight" data-aos-delay="100">
+             <b>Acomodam:</b>
+             <br>
+             Até 1 adultos;
+             <br>
+             Ou 1 adultos + 1 crianças até 11 anos; 
+             <br>
+             <b>Contem:</b>
+             <br>
+             1 cama de solteiro (queen size); 
+             <br>
+             <b>Ocupação:</b>
+             <br>
+              maxima 1 Pessoas.             
+            <br />
+            <b>Nesse quarto tem</b>
+            <br>
+            Ar, telefone, acesso a internet, cofre, frigrobar, escrivania, armário. <br> 
+            Parede de vidro e banheiro privado.            
+          </p>
+          <b>Pra efetuar sua compra clique ao lado</b>
+        </div>
+
+        <div>
+        <ul class="pagina-reserva-quarto-ul-fotos">
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/1.jpg" alt="Quarto Premium" >
+          </li>
+
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/2.jpg" alt="Quarto Premium" >
+          </li>
+
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/3.jpg" alt="Quarto Premium" >
+          </li>
+
+          
+          <li></li>                
+        </ul>
+      </div> 
+
+      </section>
+
+
+
+      <section class="pagina-reserva-descrição-foto-venda" data-aos="fade-left" data-aos-delay="150">
+        <input type="checkbox" name="quarto-premium" value="blue"  onclick="window.location.href = 'https://pag.ae/7YyaEca9s'"  style="  width: 168px;  margin-right: 0.5em; color: #999; ">
+               
+        <div>
+          <h2>Quarto Suíte Familia Casal</h2>
+          <p data-aos="fade-hight" data-aos-delay="100">
+             <b>Acomodam:</b>
+             <br>
+             Até 2 adultos;
+             <br>
+             Ou 1 adultos + 1 crianças até 11 anos; 
+             <br>
+             <b>Contem:</b>
+             <br>
+             1 cama de casal (queen size); 
+             <br>
+             <b>Ocupação:</b>
+             <br>
+              maxima 2 Pessoas.             
+            <br />
+            <b>Nesse quarto tem</b>
+            <br>
+            Ar, telefone, acesso a internet, cofre, frigrobar e banheiro privado.            
+          </p>
+          <b>Pra efetuar sua compra clique ao lado</b>
+        </div>
+
+        <div>
+        <ul class="pagina-reserva-quarto-ul-fotos">
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/4.jpg" alt="Quarto Suíte Familia Casal" >
+          </li>
+
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/5.jpg" alt="Quarto Suíte Familia Casal" >
+          </li>
+
+          <li class="pagina-reserva-quarto-li-fotos">
+            <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/6.jpg" alt="Quarto Suíte Familia Casal" >
+          </li>          
+          
+          <li></li>               
+        </ul>
+      </div> 
+
+      </section>
+
+
+      <section class="pagina-reserva-descrição-foto-venda" data-aos="fade-left" data-aos-delay="150">
+        <input type="checkbox" name="quarto-premium" value="blue"  onclick="window.location.href = 'https://pag.ae/7YyaGBFzu'"  style="  width: 168px;  margin-right: 0.5em; color: #999; ">
+               
+        <div>
+          <h2>Quarto Chale Cama Solteiro</h2>
+          <p data-aos="fade-hight" data-aos-delay="100">
+             <b>Acomodam:</b>
+             <br>
+             Até 1 adultos;
+             <br>
+             Ou 1 adultos; 
+             <br>
+             <b>Contem:</b>
+             <br>
+             1 cama de solteiro (queen size); 
+             <br>
+             <b>Ocupação:</b>
+             <br>
+              maxima 1 Pessoas.             
+            <br />
+            <b>Nesse quarto tem</b>
+            <br>
+            Ar, telefone, acesso a internet, cofre, frigrobar e banheiro privado.            
+          </p>
+          <b>Pra efetuar sua compra clique ao lado</b>
+        </div>
+
+        <div>
+          <ul class="pagina-reserva-quarto-ul-fotos">
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/7.jpg" alt="Quarto Chale Cama Solteiro" >
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/8.jpg" alt="Quarto Chale Cama Solteiro" >
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/9.jpg" alt="Quarto Chale Cama Solteiro" >
+            </li>
+            
+            
+            <li></li>              
+          </ul>
+        </div> 
+      </section>
+
+      
+
+
+      <section class="pagina-reserva-descrição-foto-venda" data-aos="fade-left" data-aos-delay="150">
+        <input type="checkbox" name="quarto-premium" value="blue"  onclick="window.location.href = 'https://pag.ae/7YyaJhqsM'" style="  width: 168px;  margin-right: 0.5em; color: #999;">               
+        <div>
+          <h2>Apart. Luxo Casal</h2>
+          <p data-aos="fade-hight" data-aos-delay="100">
+             <b>Acomodam:</b>
+             <br>
+             Até 2 adultos;
+             <br>
+             Ou 1 adultos + 1 crianças; 
+             <br>
+             <b>Contem:</b>
+             <br>
+             1 cama de casal (super king size); 
+             <br>
+             <b>Ocupação:</b>
+             <br>
+              maxima 2 Pessoas.             
+            <br />
+            <b>Nesse quarto tem</b>
+            <br>
+            Ar, telefone, acesso a internet, cofre, frigrobar e banheiro privado.<br> 
+            Disponibilidade de sofá-cama.           
+          </p>
+          <b>Pra efetuar sua compra clique ao lado</b>
+        </div>
+
+        <div>
+          <ul class="pagina-reserva-quarto-ul-fotos">
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/10.jpg" alt="Apartamento Luxo Casal" loading="lazy">
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/11.jpg" alt="Apartamento Luxo Casal" >
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/12.jpg" alt="Apartamento Luxo Casal" >
+            </li>
+            
+            
+            <li></li>               
+          </ul>
+        </div> 
+      </section>
+
+      <section class="pagina-reserva-descrição-foto-venda" data-aos="fade-left" data-aos-delay="150">
+        <input type="checkbox" name="quarto-premium" value="blue"  onclick="window.location.href = 'https://pag.ae/7YyaYrLNQ'"  style="  width: 168px;  margin-right: 0.5em; color: #999; ">
+               
+        <div>
+          <h2>Quarto Luxo Casal Familia</h2>
+          <p data-aos="fade-hight" data-aos-delay="100">
+             <b>Acomodam:</b>
+             <br>
+             Até 4 adultos;
+             <br>
+             Ou 2 adultos + 2 crianças; 
+             <br>
+             <b>Contem:</b>
+             <br>
+             2 cama de casal (super king size); 
+             <br>
+             <b>Ocupação:</b>
+             <br>
+              maxima 4 Pessoas.             
+            <br />
+            <b>Nesse quarto tem</b>
+            <br>
+            Ar, telefone, acesso a internet wifi, cofre, frigrobar, televisão, sofa. <br> 
+            Escrivania, janela de frente para piscina, banheiro privado.            
+          </p>
+          <b>Pra efetuar sua compra clique ao lado</b>
+        </div>
+
+        <div>
+          <ul class="pagina-reserva-quarto-ul-fotos">
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/13.jpg" alt="Quarto Luxo Casal Familia" loading="lazy">
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/14.jpg" alt="Apartamento Luxo Casal" >
+            </li>
+  
+            <li class="pagina-reserva-quarto-li-fotos">
+              <img class="pagina-reserva-quarto-img-foto" src="/assets/images/quarto-reserva/15.jpg" alt="Apartamento Luxo Casal" >
+            </li>
+            
+            
+            <li></li>                 
+          </ul>
+        </div> 
+      </section>
+
+
+      <footer class="hotel-footer">
+        <div class="footer-area">         
+          <div class="footer-item">
+          <div class="footer-info">
+              <br />
+            <strong class="footer-titulo">Reservas e Informações</strong>
+              <br />
+              <br />
+              +55 (00) 9000-0000
+              <br />
+              +55 (00) 9000-0000
+             <br />
+             <br />
+              hotelpravoce@hotelpravoce.com.br
+              <br />
+              <br />
+            </div>
+    
+            <div class="footer-novidade">
+              <br />            
+              <strong class="footer-titulo">Receba Novidades e Ofertas</strong>            
+              <br />
+              <br />
+              <label></label>
+              <form action="https://formsubmit.co/professorluciano1@gmail.com"
+                method="POST"     >
+                <input type="email" name="email"
+                placeholder="e-mail"/>
+                <input type="submit" style="margin-left: 10px;    border-radius: 5px; border: 1px solid #dde2e5;"
+                id="controle-label"
+                class="pagina-contato-botao-enviar"
+                placeholder="enviar"
+                value="Enviar"
+              />
+              </form>
+              <br />
+              <br />
+              Não fique de fora dessa.            
+            </div>
+    
+            <div class="footer-rede">
+              <br />
+              <strong class="footer-titulo">Siga o Hotel Pra Você nas redes</strong>
+              <br />
+              <br />
+              <a href="facebook.com.br"><img src="assets/icons/facebook.png" /></a>
+              <a href="instagram.com.br"><img src="assets/icons/instagram.png" /></a>
+              <a href="youtube.com.br"><img src="assets/icons/youtube.png" /></a>
+              <a href="twitter.com.br"><img src="assets/icons/twitter.png" /></a>
+            </div>                
+        </div>
+        <div class="footer-direito">&copy; Todos os direitos reservados: <span>Hotel Pra Você.</span></div>
+      </div>    
+      </footer>
+
+    
+
+
+
+    
+<!--FUNÇÃO QUE LOCALIZA O VALOR INSERIDO-->
+      <script>
+        var formulario = document.getElementById('formulario'),
+            resultado = document.getElementById('resultado'),
+            form = null,
+            mostra = null;
+    
+        formulario.addEventListener('submit', function (e) {
+            e.preventDefault();
+            form = e.target;
+            mostra = null;
+            for (var i = 0; i < form.elements.length; i++) {
+                if (form.elements[i].value) {
+                    mostra = resultado.querySelector('[data-' + form.elements[i].name + ']');
+                    mostra.innerText = form.elements[i].value;
+                }
+            }
+            return false;
+        }, false);
+    </script>
+    
+    
+    
+
+
+
+    <!--FUNÇÃO PARA FUNCIONAMENTO DA DATA DA ESTADIA-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script>
+      $(function() {
+        $('input[name="estadia"]').daterangepicker({
+          opens: 'left'
+           }, function(start, end, label) {
+             console.log("Uma nova seleção de datas foi feita: " + start.format('DD-MM-YYYY') + ' to ' + end.format('DD-MM-YYYY'));
+            });
+      });
+</script>
+
+
+
   </body>
 </html>
-
-
-
-
-

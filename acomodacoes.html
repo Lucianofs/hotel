@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acomodações</title>
+    <link rel="stylesheet" href="assets/styles/hotel.css" />
+    <link
+      rel="shortcut icon"
+      href="assets/icons/hotepravocelogo1.ico"
+      type="imagens/x-ico"
+    />
+  </head>
+  <body>
+    <div class="layout-principal">
+      <div class="logo-area">
+        <div class="logo-img">
+          <a href="http://127.0.0.1:5500/">
+            <img class="logoimg" src="assets/images/hotepravocelogo.png" />
+          </a>
+        </div>
+      </div>
+
+      <div class="menu-area-geral">
+        <div class="itens-menu-area">
+          <ul class="menu-area-links">
+            <li class="menu-link-individual">
+              <a class="menu-url" href="ohotel.html">o hotel</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="reserva.html">reserva</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="acomodacoes.html">acomodações</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="cidade.html">cidade</a>
+            </li>
+
+            <li class="menu-link-individual">
+              <a class="menu-url" href="contato.html">contato</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="barra-reserva-area-index">
+        <div class="barra-reserva-area-itens-index">
+          <span class="barra-reserva-spam-index"> reserva<br />Online</span
+          ><a href="index.html">Voltar</a>
+
+          <form
+            class="barra-reserva-form-index"
+            target="_blank"
+            action="https://formsubmit.co/professorluciano1@gmail.com"
+            method="POST"
+          >
+            <fieldset class="fiesdeset">
+              <div class="barra-reserva-form-chegada-index">
+                <label class="barra-reserva-form-chegada-label-index"
+                  >Chegada ↴</label
+                >
+                <br />
+                <input type="date" name="Data Chegada" />
+              </div>
+
+              <div class="barra-reserva-form-saida-index">
+                <label class="barra-reserva-form-saida-label-index"
+                  >Saida ↴</label
+                >
+                <br />
+                <input type="date" name="Data Saida" />
+              </div>
+              <div class="barra-reserva-form-fone-index">
+                <label class="barra-reserva-form-fone-label-index">Fone↴</label>
+                <br />
+                <input type="fone" name="Fone" required />
+              </div>
+
+              <div class="barra-reserva-form-adulto-index">
+                <label class="inicio" style="margin: 0">Adultos</label>
+                <select name="Quantidade de Adulto">
+                  <option value="1" selected="">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div>
+
+              <div class="barra-reserva-form-crianca-index">
+                <label class="inicio" style="margin: 0">Crianças</label>
+                <select name="Quantidade de Criança">
+                  <option value="0" selected="selected">0</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                </select>
+              </div>
+
+              <input
+                type="submit"
+                style="
+                  border-radius: 5px;
+                  border: 1px solid #dde2e5;
+                  margin-left: -2px;
+                "
+                placeholder="enviar"
+                value="Enviar"
+              />
+
+              <div class="barra-reserva-form-check-in-index">
+                <a href="reserva.html" class="botao-checkin" target="_blank"
+                  >Pré-checkin</a
+                >
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+
+      <div class="acomodacao-todo-conteudo-area">
+        <div class="acomodacoes-titulo-background">
+          <h1 class="acomodacoes-titulo-h1" data-aos="fade-down">
+            Acomodações
+          </h1>
+        </div>
+
+        <div class="acomodacoes-texto-background">
+          <h2 class="acomodacoes-texto-chamada" data-aos="fade-right">
+            O Hotel Para Você conta com diferentes tipos de acomodações, cada
+            uma ofertando um diferencial localizada em uma área do seu
+            interesse. Comodidade, ambiente confortavel, ainda o destaque na
+            referência dos nossos apartamentos e chalés.
+          </h2>
+        </div>
+
+        <div class="acomodacao-quarto" data-aos="fade-right">
+          <a href="reserva.html">
+            <h2 class="acomodacao-quarto-titulo">Quarto Premium Solteiro</h2>
+            <img
+              class="acomodacao-quarto-img"
+              src="assets/images/acomodacoes/quarto-premio.jpg"
+              alt="Imagem da Acomodação referente ao Quarto Premium"
+            />
+          </a>
+        </div>
+
+        <div class="acomodacao-quarto" data-aos="fade-right">
+          <a href="reserva.html">
+            <h2 class="acomodacao-quarto-titulo">Quarto Suíte Familia Casal</h2>
+            <img
+              class="acomodacao-quarto-img"
+              src="assets/images/acomodacoes/quarto-suite-familia.jpg"
+              alt="Imagem da Acomodação referente ao Quarto Suíte Familia"
+            />
+          </a>
+        </div>
+
+        <div class="acomodacao-quarto" data-aos="fade-right">
+          <a href="reserva.html">
+            <h2 class="acomodacao-quarto-titulo">Quarto Chalé Cama Solteiro</h2>
+            <img
+              class="acomodacao-quarto-img"
+              src="assets/images/acomodacoes/quarto-chale.jpg"
+              alt="Imagem da Acomodação referente ao Quarto Chalé"
+            />
+          </a>
+        </div>
+
+        <div class="acomodacao-quarto" data-aos="fade-right">
+          <a href="reserva.html">
+            <h2 class="acomodacao-quarto-titulo">Apart. Luxo Casal</h2>
+            <img
+              class="acomodacao-quarto-img"
+              src="assets/images/acomodacoes/quarto-luxo.jpg"
+              alt="Imagem da Acomodação referente ao Quarto Luxo"
+            />
+          </a>
+        </div>
+
+        <div class="acomodacao-quarto" data-aos="fade-right">
+          <a href="reserva.html">
+            <h2 class="acomodacao-quarto-titulo">Quarto Luxo Casal Familia</h2>
+            <img
+              class="acomodacao-quarto-img"
+              src="assets/images/acomodacoes/apartamento-luxo.jpg"
+              alt="Imagem da Acomodação referente ao Apartamento Luxo"
+            />
+          </a>
+        </div>
+
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+        />
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init({
+            easing: 'ease-out-back',
+            duration: 1000
+          })
+        </script>
+
+        <script>
+          hljs.initHighlightingOnLoad()
+
+          $('.hero__scroll').on('click', function (e) {
+            $('html, body').animate(
+              {
+                scrollTop: $(window).height()
+              },
+              1200
+            )
+          })
+        </script>
+      </div>
+    </div>
+
+    <footer class="hotel-footer">
+      <div class="footer-area">
+        <div class="footer-item">
+          <div class="footer-info">
+            <br />
+            <strong class="footer-titulo">Reservas e Informações</strong>
+            <br />
+            <br />
+            +55 (00) 9000-0000
+            <br />
+            +55 (00) 9000-0000
+            <br />
+            <br />
+            hotelpravoce@hotelpravoce.com.br
+            <br />
+            <br />
+          </div>
+
+          <div class="footer-novidade">
+            <br />
+            <strong class="footer-titulo">Receba Novidades e Ofertas</strong>
+            <br />
+            <br />
+            <label></label>
+            <form
+              action="https://formsubmit.co/professorluciano1@gmail.com"
+              method="POST"
+            >
+              <input type="email" name="email" placeholder="e-mail" />
+              <input
+                type="submit"
+                style="
+                  margin-left: 10px;
+                  border-radius: 5px;
+                  border: 1px solid #dde2e5;
+                "
+                id="controle-label"
+                class="pagina-contato-botao-enviar"
+                placeholder="enviar"
+                value="Enviar"
+              />
+            </form>
+            <br />
+            <br />
+            Não fique de fora dessa.
+          </div>
+
+          <div class="footer-rede">
+            <br />
+            <strong class="footer-titulo"
+              >Siga o Hotel Pra Você nas redes</strong
+            >
+            <br />
+            <br />
+            <a href="facebook.com.br"
+              ><img src="assets/icons/facebook.png"
+            /></a>
+            <a href="instagram.com.br"
+              ><img src="assets/icons/instagram.png"
+            /></a>
+            <a href="youtube.com.br"><img src="assets/icons/youtube.png" /></a>
+            <a href="twitter.com.br"><img src="assets/icons/twitter.png" /></a>
+          </div>
+        </div>
+        <div class="footer-direito">
+          &copy; Todos os direitos reservados: <span>Hotel Pra Você.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
