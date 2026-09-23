@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o Hotel Pra Você - Estrutura completa de lazer, conforto e entretenimento em Itacidade">
+  <title>O Hotel - Hotel Pra Você</title>
+  
+  <!-- CAMINHO CORRIGIDO PARA O CSS -->
+  <link rel="stylesheet" href="assets/styles/hotel.css">
+</head>
+<body>
+  <div class="layout-principal">
+    
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">Hotel <span>Pra Você</span></a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="ohotel.html" class="active">O Hotel</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ BARRA DE RESERVA ============ -->
+    <div class="booking-bar">
+      <form class="booking-container">
+        <div class="booking-field">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="booking-field">
+          <label for="adults">Adultos</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adulto</option>
+            <option value="2" selected>2 Adultos</option>
+            <option value="3">3 Adultos</option>
+            <option value="4">4 Adultos</option>
+          </select>
+        </div>
+        <div class="booking-field">
+          <label for="children">Crianças</label>
+          <select id="children" name="children">
+            <option value="0" selected>Sem crianças</option>
+            <option value="1">1 Criança</option>
+            <option value="2">2 Crianças</option>
+            <option value="3">3 Crianças</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-search">Buscar Disponibilidade</button>
+      </form>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-slider" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/images/hotel-about.jpg'); height: 60vh; min-height: 400px;">
+      <div class="slide-content">
+        <h1>O Hotel Pra Você</h1>
+        <p>Conheça nossa estrutura completa de lazer, conforto e entretenimento</p>
+      </div>
+    </section>
+
+    <!-- ============ ENTRETENIMENTO E LAZER ============ -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Entretenimento</h2>
+        <p>Diversão, relaxamento e experiências incríveis garantidas para toda a família</p>
+      </div>
+
+      <div class="accommodations-grid">
+        
+        <!-- Item 1 -->
+        <div class="accommodation-card">
+          <img src="assets/images/piscina.jpg" alt="Piscina" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Piscina</h3>
+            <p>Piscina ampla e aquecida, com área infantil dedicada e bar molhado para sua diversão completa sob o sol.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Aquecida</span>
+              <span class="feature-tag">Área Infantil</span>
+              <span class="feature-tag">Bar Molhado</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="accommodation-card">
+          <img src="assets/images/spa.jpg" alt="Spa & Wellness" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Spa & Wellness</h3>
+            <p>Relaxe e recarregue as energias com nossos tratamentos exclusivos, massagens terapêuticas e sauna.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Massagens</span>
+              <span class="feature-tag">Sauna</span>
+              <span class="feature-tag">Ofurô</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="accommodation-card">
+          <img src="assets/images/restaurante.jpg" alt="Restaurante" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Restaurante</h3>
+            <p>Gastronomia premium com buffet variado, pratos regionais do Nordeste e opções internacionais.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Café da Manhã</span>
+              <span class="feature-tag">Almoço</span>
+              <span class="feature-tag">Jantar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="accommodation-card">
+          <img src="assets/images/academia.jpg" alt="Academia" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Academia</h3>
+            <p>Equipamentos modernos e completos para manter sua rotina de exercícios em dia durante a hospedagem.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Cardio</span>
+              <span class="feature-tag">Musculação</span>
+              <span class="feature-tag">Acesso 24h</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="accommodation-card">
+          <img src="assets/images/lazer.jpg" alt="Área de Lazer" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Área de Lazer</h3>
+            <p>Espaços amplos e seguros para jogos, atividades recreativas e momentos de qualidade em família.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Jogos</span>
+              <span class="feature-tag">Playground</span>
+              <span class="feature-tag">Eventos</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="accommodation-card">
+          <img src="assets/images/bar.jpg" alt="Bar & Lounge" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Bar & Lounge</h3>
+            <p>Drinks exclusivos, petiscos gourmet e um ambiente sofisticado com música ao vivo para relaxar à noite.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Drinks</span>
+              <span class="feature-tag">Música Ao Vivo</span>
+              <span class="feature-tag">Petiscos</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2 style="color: var(--text-light)">O Que Nossos Hóspedes Dizem</h2>
+          <p style="color: rgba(255,255,255,0.8)">Experiências reais de quem já se hospedou conosco</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Todas as áreas do hotel são equipadas com o que há de melhor. O atendimento foi excepcional e as instalações superaram todas as minhas expectativas!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar1.jpg" alt="Jane" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Jane Silva</h4>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"O café da manhã é incrível, com opções variadas e deliciosas. O quarto era espaçoso e muito limpo. Com certeza voltarei!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar2.jpg" alt="Amanda" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Amanda Costa</h4>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Localização perfeita, equipe atenciosa e instalações de primeira. Foi uma experiência memorável para toda a família."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar3.jpg" alt="Carlos" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Carlos Mendes</h4>
+                <p>Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-section">
+          <h3>Hotel Pra Você</h3>
+          <p>Sua estadia perfeita começa aqui. Conforto, luxo e atendimento excepcional em Itacidade.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📞 +55 (00) 9000-0000</p>
+          <p>📧 hotelpravoce@hotelpravoce.com.br</p>
+          <p>📍 Itacidade, Nordeste - Brasil</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="ohotel.html">Sobre o Hotel</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Cadastre-se para receber promoções e novidades</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hotel Pra Você. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Menu Mobile
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link (mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
