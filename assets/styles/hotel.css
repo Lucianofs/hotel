@@ -1,6 +1,4 @@
-<writeToFile>
-<path>hotel.css</path>
-<content>/* ============================================
+/* ============================================
    HOTEL PRA VOCÊ - CSS COMPLETO E MODERNO
    ============================================ */
 
@@ -1039,5 +1037,3 @@ img {
 .fade-in {
   animation: fadeIn 0.5s ease;
 }
-</content>
-</writeToFile>
