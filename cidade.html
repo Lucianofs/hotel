@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça Itacidade - A cidade feita pra você, localizada no Nordeste brasileiro">
+  <title>A Cidade - Hotel Pra Você</title>
+  
+  <!-- CAMINHO CORRIGIDO PARA O CSS -->
+  <link rel="stylesheet" href="assets/styles/hotel.css">
+</head>
+<body>
+  <div class="layout-principal">
+    
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">Hotel <span>Pra Você</span></a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="ohotel.html">O Hotel</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="cidade.html" class="active">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ BARRA DE RESERVA ============ -->
+    <div class="booking-bar">
+      <form class="booking-container">
+        <div class="booking-field">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="booking-field">
+          <label for="adults">Adultos</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adulto</option>
+            <option value="2" selected>2 Adultos</option>
+            <option value="3">3 Adultos</option>
+            <option value="4">4 Adultos</option>
+          </select>
+        </div>
+        <div class="booking-field">
+          <label for="children">Crianças</label>
+          <select id="children" name="children">
+            <option value="0" selected>Sem crianças</option>
+            <option value="1">1 Criança</option>
+            <option value="2">2 Crianças</option>
+            <option value="3">3 Crianças</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-search">Buscar Disponibilidade</button>
+      </form>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-slider" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/images/cidade.jpg'); height: 60vh; min-height: 400px;">
+      <div class="slide-content">
+        <h1>Itacidade</h1>
+        <p>A cidade feita pra você</p>
+      </div>
+    </section>
+
+    <!-- ============ SOBRE A CIDADE ============ -->
+    <section class="about-section">
+      <div class="about-container">
+        <img src="assets/images/cidade-about.jpg" alt="Itacidade" class="about-image">
+        <div class="about-content">
+          <h2>Bem-vindo a Itacidade</h2>
+          <p>O Hotel Pra Você convida para uma inesquecível experiência em Itacidade. Esse maravilhoso local fica localizado no Nordeste brasileiro e mais sobre o endereço você terá acesso no mapa abaixo.</p>
+          <p>Conhecida como a "Princesinha do Nordeste", a cidade é acolhedora para todos os públicos: casais, jovens, famílias e pessoas idosas. Este é o momento perfeito para desfrutar, repor suas energias e criar memórias inesquecíveis.</p>
+          <p>Conforto, tranquilidade e uma hospitalidade única esperam por você. Venha! O Hotel Pra Você aguarda.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PONTOS TURÍSTICOS ============ -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Pontos Turísticos</h2>
+        <p>Descubra os encantos e belezas de Itacidade</p>
+      </div>
+      
+      <div class="accommodations-grid">
+        
+        <!-- Praia -->
+        <div class="accommodation-card">
+          <img src="assets/images/praia.jpg" alt="Praias de Itacidade" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Praia</h3>
+            <p>A cidade tem seus pontos turísticos, sua beleza e é acolhedora para todos os públicos, com opções e variedade. Venha conhecer as praias paradisíacas com águas cristalinas e areias brancas.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Águas Cristalinas</span>
+              <span class="feature-tag">Areia Branca</span>
+              <span class="feature-tag">Paisagens Únicas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Metrópole -->
+        <div class="accommodation-card">
+          <img src="assets/images/metropole.jpg" alt="Área Metropolitana" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Metrópole</h3>
+            <p>Modernidade e tradição se encontram nesta região vibrante da cidade. Pontos turísticos, beleza e acolhimento para todos os públicos. Venha conhecer o comércio, gastronomia e entretenimento local!</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Comércio</span>
+              <span class="feature-tag">Gastronomia</span>
+              <span class="feature-tag">Entretenimento</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Montanhas -->
+        <div class="accommodation-card">
+          <img src="assets/images/montanhas.jpg" alt="Montanhas" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Montanhas</h3>
+            <p>Trilhas ecológicas, vistas panorâmicas e contato direto com a natureza. Perfeito para aventureiros e amantes do ecoturismo que buscam renovar as energias em meio à exuberante natureza nordestina.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Trilhas</span>
+              <span class="feature-tag">Ecoturismo</span>
+              <span class="feature-tag">Vistas Panorâmicas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Centro Histórico -->
+        <div class="accommodation-card">
+          <img src="assets/images/centro.jpg" alt="Centro Histórico" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Centro Histórico</h3>
+            <p>Pontos turísticos, beleza e acolhimento para todos os públicos. Venha conhecer a rica história, arquitetura preservada e a cultura vibrante de Itacidade em um passeio inesquecível!</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Arquitetura</span>
+              <span class="feature-tag">Cultura</span>
+              <span class="feature-tag">História</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ MAPA / LOCALIZAÇÃO ============ -->
+    <section class="about-section">
+      <div class="about-container">
+        <div class="about-content">
+          <h2>Localização</h2>
+          <p>Estamos localizados em uma região privilegiada de Itacidade, no Nordeste brasileiro, com fácil acesso aos principais pontos turísticos da cidade.</p>
+          <p>Entre em contato conosco para mais informações sobre como chegar e os melhores roteiros para sua estadia. Nossa equipe terá prazer em ajudar você a planejar momentos inesquecíveis.</p>
+        </div>
+        <div class="map-container">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3980.5!2d-38.5!3d-3.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwNDInMDAuMCJTIDM4wrAzMCcwMC4wIlc!5e0!3m2!1spt-BR!2sbr!4v1234567890"
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2 style="color: var(--text-light)">O Que Nossos Hóspedes Dizem</h2>
+          <p style="color: rgba(255,255,255,0.8)">Experiências reais de quem já se hospedou conosco</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Todas as áreas do hotel são equipadas com o que há de melhor. O atendimento foi excepcional e as instalações superaram todas as minhas expectativas!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar1.jpg" alt="Jane" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Jane Silva</h4>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"O café da manhã é incrível, com opções variadas e deliciosas. O quarto era espaçoso e muito limpo. Com certeza voltarei!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar2.jpg" alt="Amanda" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Amanda Costa</h4>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Localização perfeita, equipe atenciosa e instalações de primeira. Foi uma experiência memorável para toda a família."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar3.jpg" alt="Carlos" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Carlos Mendes</h4>
+                <p>Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-section">
+          <h3>Hotel Pra Você</h3>
+          <p>Sua estadia perfeita começa aqui. Conforto, luxo e atendimento excepcional em Itacidade.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📞 +55 (00) 9000-0000</p>
+          <p>📧 hotelpravoce@hotelpravoce.com.br</p>
+          <p>📍 Itacidade, Nordeste - Brasil</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="ohotel.html">Sobre o Hotel</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Cadastre-se para receber promoções e novidades</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hotel Pra Você. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Menu Mobile
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link (mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
