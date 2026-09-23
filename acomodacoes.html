@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Acomodações do Hotel Pra Você - Quartos e suítes para todos os perfis em Itacidade">
+  <title>Acomodações - Hotel Pra Você</title>
+  
+  <!-- CAMINHO CORRIGIDO PARA O CSS -->
+  <link rel="stylesheet" href="assets/styles/hotel.css">
+</head>
+<body>
+  <div class="layout-principal">
+    
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">Hotel <span>Pra Você</span></a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="ohotel.html">O Hotel</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="acomodacoes.html" class="active">Acomodações</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ BARRA DE RESERVA ============ -->
+    <div class="booking-bar">
+      <form class="booking-container">
+        <div class="booking-field">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="booking-field">
+          <label for="adults">Adultos</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adulto</option>
+            <option value="2" selected>2 Adultos</option>
+            <option value="3">3 Adultos</option>
+            <option value="4">4 Adultos</option>
+          </select>
+        </div>
+        <div class="booking-field">
+          <label for="children">Crianças</label>
+          <select id="children" name="children">
+            <option value="0" selected>Sem crianças</option>
+            <option value="1">1 Criança</option>
+            <option value="2">2 Crianças</option>
+            <option value="3">3 Crianças</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-search">Buscar Disponibilidade</button>
+      </form>
+    </div>
+
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero-slider" style="background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('assets/images/quarto-luxo.jpg'); height: 60vh; min-height: 400px;">
+      <div class="slide-content">
+        <h1>Nossas Acomodações</h1>
+        <p>Diferentes tipos de quartos para atender suas necessidades com conforto e elegância</p>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUÇÃO ============ -->
+    <section class="about-section">
+      <div class="about-container">
+        <img src="assets/images/quarto-luxo.jpg" alt="Quarto Luxo" class="about-image">
+        <div class="about-content">
+          <h2>Conforto e Elegância</h2>
+          <p>O Hotel Pra Você conta com diferentes tipos de acomodações, cada uma ofertando um diferencial localizada em uma área do seu interesse. Comodidade e ambiente confortável são o destaque na referência dos nossos apartamentos e chalés.</p>
+          <p>Todos os quartos são equipados com ar-condicionado, TV, frigobar, cofre, Wi-Fi gratuito e banheiro privativo com amenidades premium.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACOMODAÇÕES COMPLETAS ============ -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Todos os Quartos</h2>
+        <p>Escolha a acomodação perfeita para sua estadia</p>
+      </div>
+      
+      <div class="accommodations-grid">
+        
+        <!-- Quarto 1 -->
+        <div class="accommodation-card">
+          <img src="assets/images/quarto1.jpg" alt="Quarto Premium Solteiro" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Quarto Premium Solteiro</h3>
+            <p><strong>Acomoda:</strong> Até 1 adulto ou 1 adulto + 1 criança</p>
+            <p><strong>Contém:</strong> 1 cama de solteiro queen size</p>
+            <p><strong>Ocupação máxima:</strong> 1 pessoa</p>
+            <p><strong>Comodidades:</strong> Ar-condicionado, telefone, internet Wi-Fi, cofre, frigobar, escrivaninha, armário, parede de vidro e banheiro privado.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Cama Queen</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Ar Condicionado</span>
+              <span class="feature-tag">Frigobar</span>
+              <span class="feature-tag">Cofre</span>
+              <span class="feature-tag">TV</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 299<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 2 -->
+        <div class="accommodation-card">
+          <img src="assets/images/quarto2.jpg" alt="Suíte Família Casal" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Suíte Família Casal</h3>
+            <p><strong>Acomoda:</strong> Até 2 adultos ou 1 adulto + 1 criança</p>
+            <p><strong>Contém:</strong> 1 cama de casal queen size</p>
+            <p><strong>Ocupação máxima:</strong> 2 pessoas</p>
+            <p><strong>Comodidades:</strong> Ar-condicionado, telefone, internet Wi-Fi, cofre, frigobar e banheiro privado.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Cama Casal</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Frigobar</span>
+              <span class="feature-tag">Ar Condicionado</span>
+              <span class="feature-tag">Banheiro Privativo</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 459<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 3 -->
+        <div class="accommodation-card">
+          <img src="assets/images/chale.jpg" alt="Quarto Chalé Cama Solteiro" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Quarto Chalé Cama Solteiro</h3>
+            <p><strong>Acomoda:</strong> Até 1 adulto</p>
+            <p><strong>Contém:</strong> 1 cama de solteiro queen size</p>
+            <p><strong>Ocupação máxima:</strong> 1 pessoa</p>
+            <p><strong>Comodidades:</strong> Ar-condicionado, telefone, internet Wi-Fi, cofre, frigobar e banheiro privado. Ambiente rústico e aconchegante.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Cama Solteiro</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Frigobar</span>
+              <span class="feature-tag">Varanda</span>
+              <span class="feature-tag">Vista Jardim</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 349<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 4 -->
+        <div class="accommodation-card">
+          <img src="assets/images/quarto3.jpg" alt="Apartamento Luxo Casal" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Apartamento Luxo Casal</h3>
+            <p><strong>Acomoda:</strong> Até 2 adultos ou 1 adulto + 1 criança</p>
+            <p><strong>Contém:</strong> 1 cama super king size</p>
+            <p><strong>Ocupação máxima:</strong> 2 pessoas</p>
+            <p><strong>Comodidades:</strong> Ar-condicionado, telefone, internet Wi-Fi, cofre, frigobar, banheiro privado. Disponibilidade de sofá-cama.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Super King</span>
+              <span class="feature-tag">Sofá-cama</span>
+              <span class="feature-tag">Vista Piscina</span>
+              <span class="feature-tag">Banheira</span>
+              <span class="feature-tag">Minibar Premium</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 699<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 5 -->
+        <div class="accommodation-card">
+          <img src="assets/images/quarto-familia.jpg" alt="Quarto Luxo Casal Família" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Quarto Luxo Casal Família</h3>
+            <p><strong>Acomoda:</strong> Até 4 adultos ou 2 adultos + 2 crianças</p>
+            <p><strong>Contém:</strong> 2 camas de casal super king size</p>
+            <p><strong>Ocupação máxima:</strong> 4 pessoas</p>
+            <p><strong>Comodidades:</strong> Ar-condicionado, telefone, internet Wi-Fi, cofre, frigobar, TV, sofá, escrivaninha, janela com vista para piscina e banheiro privado.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">2 Camas Casal</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">TV</span>
+              <span class="feature-tag">Sofá</span>
+              <span class="feature-tag">Vista Piscina</span>
+              <span class="feature-tag">Escrivania</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 899<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2 style="color: var(--text-light)">O Que Nossos Hóspedes Dizem</h2>
+          <p style="color: rgba(255,255,255,0.8)">Experiências reais de quem já se hospedou conosco</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Todas as áreas do hotel são equipadas com o que há de melhor. O atendimento foi excepcional e as instalações superaram todas as minhas expectativas!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar1.jpg" alt="Jane" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Jane Silva</h4>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"O café da manhã é incrível, com opções variadas e deliciosas. O quarto era espaçoso e muito limpo. Com certeza voltarei!"</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar2.jpg" alt="Amanda" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Amanda Costa</h4>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Localização perfeita, equipe atenciosa e instalações de primeira. Foi uma experiência memorável para toda a família."</p>
+            <div class="testimonial-author">
+              <img src="assets/images/avatar3.jpg" alt="Carlos" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Carlos Mendes</h4>
+                <p>Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-section">
+          <h3>Hotel Pra Você</h3>
+          <p>Sua estadia perfeita começa aqui. Conforto, luxo e atendimento excepcional em Itacidade.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📞 +55 (00) 9000-0000</p>
+          <p>📧 hotelpravoce@hotelpravoce.com.br</p>
+          <p>📍 Itacidade, Nordeste - Brasil</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="ohotel.html">Sobre o Hotel</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Cadastre-se para receber promoções e novidades</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hotel Pra Você. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Menu Mobile
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link (mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
