@@ -1,0 +1,348 @@
+<writeToFile>
+<path>index.html</path>
+<content><!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hotel Pra Você - Experiência única de hospedagem com conforto e luxo em Itacidade">
+  <title>Hotel Pra Você - Sua Estadia Perfeita</title>
+  <link rel="stylesheet" href="hotel.css">
+</head>
+<body>
+  <div class="layout-principal">
+    
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+      <div class="header-container">
+        <a href="index.html" class="logo">Hotel <span>Pra Você</span></a>
+        <nav>
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="ohotel.html">O Hotel</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="mobile-menu-toggle" id="mobileToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ============ BARRA DE RESERVA ============ -->
+    <div class="booking-bar">
+      <form class="booking-container">
+        <div class="booking-field">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" required>
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" required>
+        </div>
+        <div class="booking-field">
+          <label for="adults">Adultos</label>
+          <select id="adults" name="adults">
+            <option value="1">1 Adulto</option>
+            <option value="2" selected>2 Adultos</option>
+            <option value="3">3 Adultos</option>
+            <option value="4">4 Adultos</option>
+          </select>
+        </div>
+        <div class="booking-field">
+          <label for="children">Crianças</label>
+          <select id="children" name="children">
+            <option value="0" selected>Sem crianças</option>
+            <option value="1">1 Criança</option>
+            <option value="2">2 Crianças</option>
+            <option value="3">3 Crianças</option>
+          </select>
+        </div>
+        <button type="submit" class="btn-search">Buscar Disponibilidade</button>
+      </form>
+    </div>
+
+    <!-- ============ HERO SLIDER ============ -->
+    <section class="hero-slider">
+      <div class="slide active" style="background-image: url('images/hotel1.jpg')">
+        <div class="slide-content">
+          <h1>Bem-vindo ao Hotel Pra Você</h1>
+          <p>Uma experiência única de conforto e luxo em Itacidade</p>
+          <a href="reserva.html" class="btn-primary">Reserve Agora</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/hotel2.jpg')">
+        <div class="slide-content">
+          <h1>Conforto Inigualável</h1>
+          <p>Acomodações premium para sua estadia perfeita</p>
+          <a href="acomodacoes.html" class="btn-primary">Ver Acomodações</a>
+        </div>
+      </div>
+      <div class="slide" style="background-image: url('images/hotel3.jpg')">
+        <div class="slide-content">
+          <h1>Momentos Inesquecíveis</h1>
+          <p>Crie memórias que durarão para sempre</p>
+          <a href="cidade.html" class="btn-primary">Conheça a Cidade</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SEÇÃO SOBRE O HOTEL ============ -->
+    <section class="about-section">
+      <div class="about-container">
+        <img src="images/hotel-about.jpg" alt="Sobre o Hotel Pra Você" class="about-image">
+        <div class="about-content">
+          <h2>Sua Estadia Perfeita Começa Aqui</h2>
+          <p>O Hotel Pra Você oferece uma experiência única de hospedagem, combinando conforto, luxo e um atendimento excepcional. Localizado em Itacidade, no Nordeste brasileiro, nosso hotel é o destino perfeito para suas férias, viagens de negócios ou momentos especiais.</p>
+          <p>Com instalações modernas e uma equipe dedicada, garantimos que cada momento da sua estadia seja memorável.</p>
+          
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="about-feature-icon">🏊</div>
+              <div class="about-feature-text">
+                <h4>Piscina</h4>
+                <p>Área de lazer completa</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">🍽️</div>
+              <div class="about-feature-text">
+                <h4>Restaurante</h4>
+                <p>Gastronomia premium</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">💆</div>
+              <div class="about-feature-text">
+                <h4>Spa</h4>
+                <p>Relaxamento total</p>
+              </div>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">📶</div>
+              <div class="about-feature-text">
+                <h4>Wi-Fi Grátis</h4>
+                <p>Internet de alta velocidade</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ACOMODAÇÕES EM DESTAQUE ============ -->
+    <section class="section">
+      <div class="section-title">
+        <h2>Nossas Acomodações</h2>
+        <p>Escolha o quarto perfeito para sua estadia</p>
+      </div>
+      
+      <div class="accommodations-grid">
+        
+        <!-- Quarto 1 -->
+        <div class="accommodation-card">
+          <img src="images/quarto1.jpg" alt="Quarto Premium Solteiro" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Quarto Premium Solteiro</h3>
+            <p>Conforto e elegância para sua estadia individual. Ideal para viajantes a negócios.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">1 Cama Queen</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Ar Condicionado</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 299<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 2 -->
+        <div class="accommodation-card">
+          <img src="images/quarto2.jpg" alt="Suíte Família Casal" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Suíte Família Casal</h3>
+            <p>Espaço ideal para casais e famílias pequenas. Ambiente romântico e acolhedor.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">1 Cama Casal</span>
+              <span class="feature-tag">Wi-Fi</span>
+              <span class="feature-tag">Frigobar</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 459<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quarto 3 -->
+        <div class="accommodation-card">
+          <img src="images/quarto3.jpg" alt="Apartamento Luxo Casal" class="accommodation-image">
+          <div class="accommodation-content">
+            <h3>Apartamento Luxo Casal</h3>
+            <p>Luxo e sofisticação em cada detalhe. Perfeito para momentos especiais.</p>
+            <div class="accommodation-features">
+              <span class="feature-tag">Super King</span>
+              <span class="feature-tag">Sofá-cama</span>
+              <span class="feature-tag">Vista Piscina</span>
+            </div>
+            <div class="accommodation-price">
+              <div class="price">R$ 699<span>/noite</span></div>
+              <a href="reserva.html" class="btn-book">Reservar</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="acomodacoes.html" class="btn-primary" style="background: var(--primary-color); color: var(--secondary-color); padding: 1rem 2.5rem; border-radius: 50px; text-decoration: none; font-weight: 600; text-transform: uppercase; letter-spacing: 1px;">
+          Ver Todas as Acomodações
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ DEPOIMENTOS ============ -->
+    <section class="testimonials-section">
+      <div class="testimonials-container">
+        <div class="section-title">
+          <h2 style="color: var(--text-light)">O Que Nossos Hóspedes Dizem</h2>
+          <p style="color: rgba(255,255,255,0.8)">Experiências reais de quem já se hospedou conosco</p>
+        </div>
+        
+        <div class="testimonials-grid">
+          
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Todas as áreas do hotel são equipadas com o que há de melhor. O atendimento foi excepcional e as instalações superaram todas as minhas expectativas!"</p>
+            <div class="testimonial-author">
+              <img src="images/avatar1.jpg" alt="Jane Silva" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Jane Silva</h4>
+                <p>São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"O café da manhã é incrível, com opções variadas e deliciosas. O quarto era espaçoso e muito limpo. Com certeza voltarei!"</p>
+            <div class="testimonial-author">
+              <img src="images/avatar2.jpg" alt="Amanda Costa" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Amanda Costa</h4>
+                <p>Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-text">"Localização perfeita, equipe atenciosa e instalações de primeira. Foi uma experiência memorável para toda a família."</p>
+            <div class="testimonial-author">
+              <img src="images/avatar3.jpg" alt="Carlos Mendes" class="testimonial-avatar">
+              <div class="testimonial-info">
+                <h4>Carlos Mendes</h4>
+                <p>Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="footer-container">
+        
+        <div class="footer-section">
+          <h3>Hotel Pra Você</h3>
+          <p>Sua estadia perfeita começa aqui. Conforto, luxo e atendimento excepcional em Itacidade.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📷</a>
+            <a href="#" aria-label="Twitter">🐦</a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contato</h3>
+          <p>📞 +55 (00) 9000-0000</p>
+          <p>📧 hotelpravoce@hotelpravoce.com.br</p>
+          <p>📍 Itacidade, Nordeste - Brasil</p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Links Rápidos</h3>
+          <ul>
+            <li><a href="ohotel.html">Sobre o Hotel</a></li>
+            <li><a href="acomodacoes.html">Acomodações</a></li>
+            <li><a href="reserva.html">Reservas</a></li>
+            <li><a href="cidade.html">A Cidade</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h3>Newsletter</h3>
+          <p>Cadastre-se para receber promoções e novidades</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu e-mail" required>
+            <button type="submit">Assinar</button>
+          </form>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Hotel Pra Você. Todos os direitos reservados.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    // Menu Mobile
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navMenu = document.getElementById('navMenu');
+    
+    mobileToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Fechar menu ao clicar em um link (mobile)
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Slider automático
+    const slides = document.querySelectorAll('.slide');
+    let currentSlide = 0;
+
+    function nextSlide() {
+      slides[currentSlide].classList.remove('active');
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].classList.add('active');
+    }
+
+    setInterval(nextSlide, 5000);
+
+    // Data mínima no check-in (hoje)
+    const checkinInput = document.getElementById('checkin');
+    const checkoutInput = document.getElementById('checkout');
+    const today = new Date().toISOString().split('T')[0];
+    checkinInput.min = today;
+    checkoutInput.min = today;
+
+    checkinInput.addEventListener('change', () => {
+      checkoutInput.min = checkinInput.value;
+    });
+  </script>
+</body>
+</html>
+</content>
+</writeToFile>
