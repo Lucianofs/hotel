@@ -1,4 +1,4 @@
-Demonstração de solução para hotelaria
+Projeto em Desenvolvimento site para hotelaria
 
 https://lucianofs.github.io/hotel/
 
