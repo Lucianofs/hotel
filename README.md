@@ -1,5 +1,8 @@
-Projeto em Desenvolvimento site para hotelaria
+Projeto em Desenvolvimento de site para hotelaria
 
-https://lucianofs.github.io/hotel/
+<a href="https://lucianofs.github.io/hotel/">Nome que vai aparecer na tela</a>
+
+
+
 
 
